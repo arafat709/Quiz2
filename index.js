@@ -230,13 +230,68 @@ let b = 7;
 // console.log(car);
 
 
-let numbers = [1,2,3,4,5];
-let value = numbers.find(function(value){
-    return value>3;
-})
-console.log(value);
+// let numbers = [1,2,3,4,5];
+// let value = numbers.find(function(value){
+//     return value>3;
+// })
+// console.log(value);
 
-let first  = [1,2,3];
-let second = [4,5,6];
-console.log([...first,...second]); //(It's called Spread Operator);
+// let first  = [1,2,3];
+// let second = [4,5,6];
+// console.log([...first,...second]); //(It's called Spread Operator);
 
+//function
+//function declaration
+// function walk(){
+//     console.log("wald");
+// }
+// walk();
+
+//function expression
+// let walk = function (){
+//     console.log("walk");
+// }
+// walk();
+
+
+// function myFunction(_p1,_name4="Nur"){
+//     return (`#(_p1) are You mad`)
+// }
+// console.log( _p1("Tahsan"));
+// name4();
+
+//global scope
+// let globalVar = "I am global!";
+
+// function showGlobal() {
+//     console.log(globalVar); // Accessible here
+// }
+
+// showGlobal();
+// console.log(globalVar); // Accessible here too
+
+//Function scope
+// function myFunction() {
+//     let funcVar = "I am inside a function!";
+//     console.log(funcVar); // Works
+// }
+
+// myFunction();
+// console.log(funcVar); // Error: funcVar is not defined
+
+//hoisting
+// console.log(hoistedVar); // undefined (hoisting)
+// var hoistedVar = "I am hoisted!";
+
+// console.log(notHoisted); // Error: Cannot access 'notHoisted' before initialization
+// let notHoisted = "I am not hoisted!";
+
+let Arrr = [1,2,3,4,5,6];
+function checkEven(Arrr){
+    if(Arrr % 2===0){
+        console.log(true);
+    }
+    else
+        console.log(false)
+}
+checkEven(Arrr);
