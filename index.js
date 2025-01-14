@@ -286,12 +286,20 @@ let b = 7;
 // console.log(notHoisted); // Error: Cannot access 'notHoisted' before initialization
 // let notHoisted = "I am not hoisted!";
 
-let Arrr = [1,2,3,4,5,6];
-function checkEven(Arrr){
-    if(Arrr % 2===0){
-        console.log(true);
-    }
-    else
-        console.log(false)
+// let Arrr = [1,2,3,4,5,6];
+// function checkEven(Arrr){
+//     if(Arrr % 2===0){
+//         console.log(true);
+//     }
+//     else
+//         console.log(false)
+// }
+// checkEven(Arrr);
+
+//Loop
+//for
+for(i=0; i<=5; i++){
+    console.log("Hello World");
 }
-checkEven(Arrr);
+
+//while
