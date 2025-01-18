@@ -121,10 +121,13 @@ mouseOver.addEventListener("mouseout", () => {
     mouseOver.src = "images/1img.jpg";
 })
 
-//16. Create a button and dynamically add an onclick handler using JavaScript to log "Button Clicked" to the console.
+// 16. Create a button and dynamically add an onclick handler using JavaScript to log "Button Clicked" to the console.
+const onCLick = document.getElementById("onClick")
+onCLick.addEventListener("click", () => {
+    console.log("Button Clicked");
+})
 
-
-//17. Create a password field with a "Show/Hide Password" toggle button.
+// //17. Create a password field with a "Show/Hide Password" toggle button.
 const passwordField = document.getElementById("password");
 const toggleButton = document.getElementById("showHideBtn");
 
@@ -138,7 +141,6 @@ toggleButton.addEventListener("click", () => {
         toggleButton.innerText = "Show"
     }
 });
-
 
 //18. Create an object with properties name, age, and profession. Write a function to update the profession property.
 let Person = {
@@ -174,3 +176,83 @@ for (i = 0; i < filteringOdd.length; i++) {
 for (i = 1; i < filteringOdd.length; i += 2) {
     console.log(filteringOdd[i]);
 };
+
+//21. Write a while loop that prints all the odd numbers between 1 and 50.
+let i = 1;
+while (i <= 50) {
+    if (i % 2 !== 0) {
+        console.log([i]);
+    };
+    i++;
+}
+//22. Using a for loop, print all the even numbers from 2 to 100.
+for (i = 2; i <= 100; i += 2) {
+    console.log(i);
+}
+
+//23. Given an array of numbers [3, 8, 12, 5, 9], use a for loop to calculate the sum of the elements in the array.
+let arrray = [3, 8, 12, 5, 9];
+let sum = 0;
+for(i=0;i<arrray.length;i++){
+    sum+=arrray[i];
+}
+console.log(sum);
+
+//24. Use a while loop to iterate through the array [4, 15, 23, 42, 8, 16] and print each element.
+let whileArray = [4, 15, 23, 42, 8, 16];
+let i = 0;
+while (i < whileArray.length) {
+    console.log(whileArray[i]);
+    i++;
+};
+
+//25. Write a for loop that loops through numbers 1 to 100, but breaks the loop when it encounters the number 45.
+for (i = 1; i <= 100; i++) {
+    if (i === 45) {
+        break;
+    }
+    console.log(i);
+}
+
+//26. Write a while loop that prints numbers from 1 to 20 but skips numbers divisible by 4 using the continue statement.
+for (i = 1; i <= 20; i++) {
+    if (i % 4 === 0) {
+        continue;
+    }
+    console.log(i);
+}
+
+//27. Use a while loop to print numbers in reverse order from 20 to 1.
+let i = 20;
+while (i > 0) {
+    console.log(i);
+    i--;
+}
+
+//28. Write a for loop that subtracts all the numbers in the array [20, 5, 8, 10, 3] starting with the first number (20)
+let subtractArray = [20,5,8,10,3];
+let subtract = subtractArray[0];
+for(i= 1;i<subtractArray.length;i++){
+   subtract -= subtractArray[i];
+}
+console.log(subtract);
+
+//Note:If i = 0, the loop subtracts the first element from itself, which is redundant and incorrect for your intended logic.
+// If i = 1, the loop skips the first element and subtracts subsequent elements from the initial value, yielding the correct result.
+
+//29. Given the array [10, 20, 30, 40, 50], calculate the average of the numbers using a for loop.
+let calculateAve = [10, 20, 30, 40, 50];
+let total = 0;
+for (i = 0; i < calculateAve.length; i++) {
+    total += calculateAve[i];
+}
+let average = total / calculateAve.length;
+console.log(average);
+
+//30. Write a program that iterates through numbers from 1 to 50. For each number, print "Even" if the number is divisible by 2, and "Odd" if it isn’t.
+let i = 1;
+while (i <= 50) {
+    if (i % 2 === 0) console.log(i +" "+ "is Even");
+    else console.log(i +" "+ "is Odd");
+    i++;
+}
