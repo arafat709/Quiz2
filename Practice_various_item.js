@@ -320,6 +320,17 @@ console.log(calculateAverage);
 setTimeout(() => console.log("Hello World"), 3000);
 
 //41. Write a program to log the current date and time in the format YYYY-MM-DD HH:mm:ss using setTimeout.
+setTimeout(() => {
+    const now = new Date();
+    const year = now.getFullYear()
+    const month = now.getMonth()
+    const date = now.getDate()
+    const hour = now.getHours()
+    const minute = now.getMinutes()
+    const second = now.getSeconds()
+
+    console.log(`${year}:${month}:${date} ${hour}:${minute}:${second}`);
+}, 1000);
 
 
 //42. Filter an array of strings to include only those that start with the letter "A".
