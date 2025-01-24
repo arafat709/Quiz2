@@ -52,21 +52,17 @@
 // 6(Write a function isEven(number) that checks if a number is even and returns true or false. Use it to check the evenness of numbers from an array.)
 
 // let Arrr = [1,2,3,4,5,6];
-console.log(checkEven(6));
+// console.log(checkEven(6));
 
-function checkEven(number){
+// function checkEven(number){
 
-    if(number % 2 === 0) {
-        return true
-    } else {
-        return false
-    }
+//     if(number % 2 === 0) {
+//         return true
+//     } else {
+//         return false
+//     }
 
-}
-
-
-
-
+// }
 
 // 7(Write a function welcomeMessage(name = "Guest") that returns:"Welcome, [name]!")
 // function name(Guest){
@@ -104,47 +100,44 @@ function checkEven(number){
 // getFirstChar("Get first character");
 
 // 13(Select a paragraph (<p>) element using getElementById() and change its text content to "This text was changed using JavaScript!".)
-const para = document.getElementById("paragr");
-para.innerHTML = "It's Changed by using JavaScript";
+// const para = document.getElementById("paragr");
+// para.innerHTML = "It's Changed by using JavaScript";
 
 // 14(Use querySelectorAll to select all <li> elements from a list. Log their text content one by one in the console.)
-
 // let selectAllLi = document.querySelectorAll("li");
-
 // for(text of selectAllLi) {
 //     console.log(text.innerText);
 // }
 
-
 // 15(Write a script that changes the font size of all <h2> elements to "24px" using getElementsByTagName.)
-
-const getelementsByTag = document.getElementsByTagName("h2");
-
+// const getelementsByTag = document.getElementsByTagName("h2");
 // for(single of getelementsByTag) {
 //     single.style.fontSize = '24px'
 // }
 
-
-
-
 // 16(Select all elements with the class highlight using getElementsByClassName. Change their text color to "red".)
-
+// const selectClass = document.getElementsByClassName("classPro");
+// for (let color of selectClass) {
+//     color.style.color = "red";
+// }
 
 // 17(Write a script that selects a <div> with a specific ID and updates its innerHTML to include: "Updated content using JavaScript.")
-let divUpdate = document.getElementById("aDiv");
-divUpdate.innerHTML="Updated content using JavaScript.";
+// let divUpdate = document.getElementById("aDiv");
+// divUpdate.innerHTML = "Updated content using JavaScript.";
 
 // //18(Use querySelector to select the first <span> inside a <div> and change its background color to "yellow".)
-let bgChange = document.querySelector("span");
-bgChange.style.backgroundColor = "yellow";
+// let bgChange = document.querySelector("span");
+// bgChange.style.backgroundColor = "yellow";
 
 // 19(Select all <p> elements using getElementsByTagName. Count how many <p> elements exist on the page and log the count.)
+// const selectAllP = document.getElementsByTagName("p");
+// for(onlyP of selectAllP){
+//     console.log(onlyP.innerText);
+// };
 
 // 20(Select an element by ID and add a new CSS class to it using classList.add(). Then remove the class using classList.remove() and observe the changes.)
+// let element1 = document.getElementById('paragr');
+// element1.classList.add('class1')
+// element1.classList.remove('class1')
+// console.log(element1);
 
-let element1 = document.getElementById('paragr');
-
-element1.classList.add('class1')
-element1.classList.remove('class1')
-
-console.log(element1);

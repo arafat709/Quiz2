@@ -106,7 +106,7 @@ let b = 7;
 //     case "+":
 //         console.log(m+n);
 //         break;
-    
+
 //     case "-":
 //         console.log(m-n);
 //         break;
@@ -298,8 +298,24 @@ let b = 7;
 
 //Loop
 //for
-for(i=0; i<=5; i++){
-    console.log("Hello World");
-}
+// for(i=0; i<=5; i++){
+//     console.log("Hello World");
+// }
 
-//while
+// let z = prompt("Enter No");
+// for(i = 1; i<=10;i++){
+//     console.log(z,"x",i,"=",z*i);
+// }
+
+// document.getElementById("showTable").addEventListener("click", function () {
+//     let table = "";
+//     let number = 3; // The number for the multiplication table
+//     for (let i = 1; i <= 10; i++) {
+//         table += `${number} x ${i} = ${number * i}\n`; // Generate the table
+//     }
+//     document.getElementById("output").value = table; // Display the table in the input
+// });
+
+function startTimer() {
+    setTimeout(() => window.alert("hey! sup?"), 3000);
+}
