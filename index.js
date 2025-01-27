@@ -316,6 +316,14 @@ let b = 7;
 //     document.getElementById("output").value = table; // Display the table in the input
 // });
 
-function startTimer() {
-    setTimeout(() => window.alert("hey! sup?"), 3000);
+const getDiv = document.querySelectorAll(".counterDiv");
+
+for(let single of getDiv){
+    let count = 0;
+    let counterup = ()=>{
+        count++;
+        if(count <= getDiv.dataset.counterP);
+        single.innerHTML = count
+    }
+    setInterval(counterup,20);
 }
