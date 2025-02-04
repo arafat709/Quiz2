@@ -75,9 +75,9 @@ console.log("*".repeat(n))
 printStars(5);
 
 // 9(Create a function calculateCircle(radius) that contains two nested functions:findDiameter(radius) to calculate the diameter findCircumference(radius) to calculate the circumference Return an object with both values.)
-function calculateCircle(radius){
-    function findDiameter()
-}
+// function calculateCircle(radius){
+//     function findDiameter()
+// }
 
 // 10(Write a function addToArray(arr, value) that adds a value to an array using the push() method.)
 function addToArray(arr,value){

@@ -1,6 +1,6 @@
 //arithmatic operator**
-let x = 5;
-let y = 5;
+// let x = 5;
+// let y = 5;
 // console.log(x+y); //addition
 // console.log(x-y); //subtraction
 // console.log(x*y); //multiflication
@@ -316,14 +316,103 @@ let b = 7;
 //     document.getElementById("output").value = table; // Display the table in the input
 // });
 
-const getDiv = document.querySelectorAll(".counterDiv");
+// const getDiv = document.querySelectorAll(".counterdata");
+// for(let singlecounter of getDiv){
+//     let count = 0;
+//     let counterUp = ()=>{
+//         count++;
+//         if(count <= singlecounter.dataset.counterdata){
+//             singlecounter.innerHTML=count
+//         }
+//     }
+//     setInterval(counterUp,10);
+// }
 
-for(let single of getDiv){
-    let count = 0;
-    let counterup = ()=>{
-        count++;
-        if(count <= getDiv.dataset.counterP);
-        single.innerHTML = count
-    }
-    setInterval(counterup,20);
-}
+//filter method
+let customers = [
+    { f_name: "mosh", expense: 600, age: 84, married: true, gender: "M", purchase: ["Book", "Pen", "Pensil"] },
+    { f_name: "hamedani", expense: 1200, age: 64, married: true, gender: "M", purchase: ["Book", "Pen", "Pensil"] },
+    { f_name: "jack", expense: 1230, age: 54, married: true, gender: "M", purchase: ["Book", "Pen", "Pensil"] },
+    { f_name: "adeline", expense: 400, age: 14, married: false, gender: "F", purchase: ["Book", "Pen", "Pensil"] },
+    { f_name: "nina", expense: 500, age: 44, married: true, gender: "F", purchase: ["Book", "Pen", "Pensil"] },
+    { f_name: "kubo", expense: 200, age: 23, married: false, gender: "M", purchase: ["Book", "Pen", "Pensil"] }
+];
+
+// const filterSeniorCustomer = customers.filter(senors => {
+//     return senors.age >= 60;
+// })
+// console.log(filterSeniorCustomer);
+
+//Map method
+// const mapingCustomer = customers.map(customer => {
+//     let title = "";
+//     if (customer.gender === "M") title = "Mr."
+//     else if (customer.gender === "F" && customer.married) title = "Mrs"
+//     else title = "Miss"
+
+//     customer.full_name = `${title} ${customer.f_name}`
+//     return customer;
+// })
+// console.log(mapingCustomer);
+
+//reduce method
+// let count = 0
+// let total = customers.reduce((accumulator,customer)=>{
+//     if(customer.purchase.includes("Book")){
+//         accumulator += customer.age;
+//         count = count +1;
+//     }
+//     return accumulator;
+// },0)
+// let averageBookPurchasedPeopleAge =Math.floor(total / count);
+// console.log(averageBookPurchasedPeopleAge);
+// console.log(total);
+
+//some method(like filter method but it's return a boolean)
+// let youngCustomer = customers.some(customer => customer.age < 18);
+// console.log(youngCustomer);
+
+//find method(like some mehod but it's reutn only the first matched value)
+// let youngCustomer = customers.find(customer => customer.age < 18);
+// console.log(youngCustomer);
+
+//every method
+// const isThereAWindowShopper = customers.every(customer => customer.purchase.length ===0);
+// console.log(isThereAWindowShopper);
+
+//forEach method(iterater all element an array...like for loop)
+// const iteraterAllCustomer = customers.forEach(customer => console.log(customer));
+
+//entries method
+// let fruits = ["Apple","Jackfruit","Mango"];
+// for(const [key,value] of fruits.entries()) {
+//     console.log(key,value);
+// };
+
+//Method Chaining***
+const marriedCustomer = customers.filter(marriedCustomer => marriedCustomer.married);
+console.log(marriedCustomer);
+
+const marriedCustomerExpense = marriedCustomer.map(marriedCustomerExpense => marriedCustomerExpense.expense);
+console.log(marriedCustomerExpense);
+
+const totalExpense = marriedCustomerExpense.reduce((accum, current) => accum + current);
+console.log(totalExpense);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const totalMarriedCustomerExpense = customers.filter(customer => customer.married).map(customer => customer.expense).reduce((accum, curr) => accum + curr, 0);
+console.log(totalMarriedCustomerExpense);//It's called Method Chaining.
+
+//What This Does
+//1️⃣. filter(customer => customer.married)=>Keeps only married customers.
+//2️⃣. map(customer => customer.expense)=>Extracts the expense property from each filtered customer.
+//3️⃣. reduce((accum, curr) => accum + curr)=>Sums up all extracted expenses.
+
+//Create a new array that combines employee names and department names in the format: "Alice (HR)".
+const employeeWithDept = employees.map(employee =>{
+    let departmentName = departments.find(dept => dept.id === employee.departmentId);
+    return `${employee.name} (${departmentName.name})`})
+console.log(employeeWithDept);
+
+
+
+

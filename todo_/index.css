@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    color: white;
+    letter-spacing: 6px;
+}
+
+.container {
+    /* width: 400px; */
+    text-align: center;
+}
+.con-div{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+#porsche {
+    padding: 50px 0;
+}
+
+.parent {
+    width: 400px;
+    padding: 20px;
+    background: #222;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+.child{
+    width: 400px;
+    padding: 20px;
+    background: #222;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    overflow: scroll;
+}
+
+h2 {
+    background: linear-gradient(45deg, #16222a,#3a6073 );
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #283048, #859398 );
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.8;
+
+
+}
+
+.c-head {
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0 20px 0;
+    color: white;
+}
+
+.c-head h3{
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: linear-gradient(45deg,#5A585A,#090947) ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.list-model-data {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font: 12px italic;
+}
